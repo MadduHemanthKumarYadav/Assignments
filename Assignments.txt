@@ -217,3 +217,65 @@ f.close()
 #OUTPUT
 
 This is a new file
+
+
+Assignment - 4
+Example for Positional Arguments.
+
+#CODE
+
+def info(name,age):
+  print("Hi")
+  print("My name is",name,". I am",age,"years old.")
+info("Hemanth",19)
+
+#OUTPUT
+
+Hi
+My name is Hemanth . I am 19 years old.
+
+Example for Keyword Arguments.
+
+#CODE
+
+def info(name,age):
+  print("Hi")
+  print("My name is",name,". I am",age,"years old.")
+info(name="Hemanth",age=19)
+
+#OUTPUT
+
+Hi
+My name is Hemanth . I am 19 years old.
+
+Example for *argument
+
+#CODE
+
+def adder(*num):
+    sum = 0
+    for n in num:
+        sum = sum + n
+    print("Sum:",sum)
+adder(3,5)
+adder(1,2,3,5,6)
+
+#OUTPUT
+
+Sum: 8
+Sum: 17
+
+Example for **argument
+
+#CODE
+
+def fun(**args):
+  for i in args:
+    print(i,args[i])
+fun(plates=100,glasses=150)
+
+#OUTPUT
+
+plates 100
+glasses 150
+
